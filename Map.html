@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Map</title>
+	<link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico"></link>
+	<link rel="stylesheet" type="text/css" href="Images/Stylepage.css"></link>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mappa-mundi@0.0.4"></script>
+	<script src="sketch.js"></script>
+</head>
+<body>
+</header>
+<a href="Index.html"><img src="Images/cross.png" height="25px" width="25px"/></a>
+<div class="map"
+<div style="position:relative;width:3000px;height:1600px;" id="mappa" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+<div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+<div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1;">
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-191px, 75px, 0px) scale(2);"></div>
+<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-621px, -59px, 0px) scale(1);">
+<img alt="" role="presentation" src="http://b.tile.osm.org/5/23/20.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(900px, 400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/24/20.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(1700px, 400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/23/21.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(900px, 900px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://a.tile.osm.org/5/24/21.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(1700px, 900px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://a.tile.osm.org/5/23/19.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(900px, -100px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://b.tile.osm.org/5/24/19.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(1700px, -100px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://a.tile.osm.org/5/22/20.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(100px, 400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://a.tile.osm.org/5/25/20.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(2500px, 400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://b.tile.osm.org/5/22/21.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(100px, 900px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://b.tile.osm.org/5/25/21.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(2500px, 900px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://a.tile.osm.org/5/23/22.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(900px, 1400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://b.tile.osm.org/5/24/22.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(1700px, 1400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/22/19.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(100px, -100px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/25/19.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(2500px, -100px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/22/22.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(100px, 1400px, 0px); opacity: 1;">
+<img alt="" role="presentation" src="http://c.tile.osm.org/5/25/22.png" class="leaflet-tile leaflet-tile-loaded" style="width: 800px; height: 500px; transform: translate3d(2500px, 1400px, 0px); opacity: 1;"></div></div></div>
+<div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane">
+<div class="leaflet-layer">
+<canvas id="defaultCanvas0" class="p5Canvas" style="width: 1800px; height: 1600px;" width="1800" height="1600">
+</canvas></div></div><div class="leaflet-pane leaflet-marker-pane"></div>
+<div class="leaflet-pane leaflet-tooltip-pane"></div>
+<div class="leaflet-pane leaflet-popup-pane"></div>
+<div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(6137px, 5398.67px, 0px) scale(16);"></div></div>
+<div class="leaflet-control-container"><div class="leaflet-top leaflet-left">
+<div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+<a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">-</a></div></div>
+<div class="leaflet-top leaflet-right"></div>
+<div class="leaflet-bottom leaflet-left"></div>
+<div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control">
+<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a></div></div></div></div>
+</div>
+</body>
+</html>
